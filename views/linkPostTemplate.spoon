@@ -1,9 +1,0 @@
-<div class="am-linkpost"> 
-    <h1 class="am-linkpost-title"><a href="{{link}}">{{title}} 🔗</a></h1>
-    <span>
-        <p class="am-linkpost-pub-date"><em>Published {{date}}</em> <a href="{{permalink}}" class="am-linkpost-permalink">(Permalink 📌)</a></p>
-    </span>
-    <div class="am-linkpost-content">
-        {{content}}
-    </div>
-</div>

@@ -1,7 +1,0 @@
-<div class="am-post"> 
-    <h1 class="am-post-title"><a href="{{link}}">{{title}}</a></h1>
-    <p class="am-post-pub-date"><em>Published {{date}}</em></p>
-    <div class="am-post-content">
-        {{content}}
-    </div>
-</div>
