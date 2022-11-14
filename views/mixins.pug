@@ -1,0 +1,19 @@
+mixin post(post)
+    div(class="am-post")
+        h1(class="am-post-title") 
+            a(href= post.metadata.link || post.metadata.Link) #{post.metadata.title || post.metadata.Title}
+        p(class="am-post-pub-date") 
+            em Published #{post.metadata.date || post.metadata.Date}
+        div(class="am-post-content")
+            div !{post.content}
+
+mixin linkPost(post)
+    div(class="am-linkpost")
+        h1(class="am-linkpost-title")
+            a(href= post.metadata.link || post.metadata.Link) #{post.metadata.title || post.metadata.Title} 🔗
+        span
+            p(class="am-linkpost-pub-date")
+                em Published #{post.metadata.date || post.metadata.Date}</em> 
+                a(href= post.metadata.permalink || post.metadata.Permalink class="am-linkpost-permalink") (Permalink 📌)
+        div(class="am-linkpost-content")
+            div !{post.content}
